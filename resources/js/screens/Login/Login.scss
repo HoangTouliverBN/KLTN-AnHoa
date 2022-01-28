@@ -1,0 +1,53 @@
+@import '../../../sass/app.scss';
+
+.login-container {
+  background-color: $gray-200;
+  .login-box {
+    background-color: $white;
+    margin: 50px 0 50px 0;
+    border-radius: 15px;
+    .form-box {
+      min-height: 550px;
+      width: 85%;
+    }
+    .box {
+      min-height: 550px;
+    }
+    .text-input {
+      border-radius: 10px;
+      background-color: $white;
+    }
+    .input-box {
+      width: 100%;
+    }
+    a {
+      color: $astro-orange-100;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline !important;
+    }
+    .form-check-input:checked {
+      background-color: $astro-orange-100 !important;
+      border-color: $astro-orange-100 !important;
+      box-shadow: none !important;
+    }
+    .form-check-input {
+      background-color: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+.cancel-button {
+  background: $astro-orange-100;
+  .text {
+    background: $white;
+    color: $astro-orange-100;
+    border: 1px solid $astro-orange-100;
+  }
+}
+.form-control:focus {
+  background-color: #fff !important;
+  border-color: $astro-orange-100 !important;
+  box-shadow: none !important;
+}

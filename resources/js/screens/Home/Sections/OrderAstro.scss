@@ -1,0 +1,61 @@
+.section9 {
+  width: 100%;
+  background: white;
+  position: relative;
+  .row-9 {
+    padding-left: 0 !important;
+  }
+  .container-9 {
+    margin: 0 !important;
+    max-width: none;
+  }
+  .left {
+    display: block;
+    height: 429.28px;
+    background-image: url('../../../../../public/images/tabletop.jpg');
+    background-size: cover;
+    background-position: 100%;
+    position: static;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-position: 100%;
+  }
+  .title {
+    padding-right: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &::selection p {
+      background: #ff920a !important;
+    }
+    h1 {
+      color: #ea3729 !important;
+      font-family: Mikado, sans-serif, -apple-system, serif;
+      letter-spacing: normal;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 1.27272727;
+    }
+    .content {
+      max-width: 514px;
+      p {
+        font-family: Graphik Web, sans-serif, -apple-system, serif;
+        letter-spacing: normal;
+        -webkit-font-smoothing: antialiased;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        text-size-adjust: 100%;
+      }
+    }
+  }
+  .btn-9 {
+    font-weight: 600;
+    width: 150px;
+  }
+}
+::selection {
+  background: #ff920a;
+  color: #fff;
+}

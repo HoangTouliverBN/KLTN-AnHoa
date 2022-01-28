@@ -1,0 +1,212 @@
+@import '../../../sass/app.scss';
+
+@mixin icon($x, $y) {
+  display: block;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  background-image: url('../../../../public/images/social-media-sprite.png');
+  background-position: $x $y;
+  background-size: 600%;
+}
+.footer {
+  width: auto;
+  height: auto;
+  background: $astro-black-100;
+  .header-logo {
+    fill: lighten($color: $astro-black-100, $amount: 40%) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .header-logo:hover {
+    fill: $body-bg !important;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: lighten($color: $astro-black-100, $amount: 40%) !important;
+    padding: 5px 18px !important;
+  }
+  .nav:hover {
+    color: $body-bg !important;
+  }
+  .nav:hover:last-child {
+    color: lighten($color: $astro-black-100, $amount: 40%) !important;
+  }
+  .top {
+    padding: 21px 0px 0px 0px !important;
+    background: $astro-black-100 !important;
+  }
+  .container {
+    width: 100%;
+    background: $astro-black-100 !important;
+    justify-content: center !important;
+  }
+  .head {
+    max-width: none;
+  }
+  .navbar-nav {
+    font-size: 15px;
+    margin-right: 0 !important;
+  }
+  .mm {
+    height: 42px;
+    overflow: hidden;
+    border-radius: 100px !important;
+  }
+  .form {
+    border: none !important;
+  }
+  input:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    margin-right: 1px;
+  }
+  .mm {
+    background: $body-bg;
+  }
+  .btn {
+    border: none !important;
+    background: rgb(255, 138, 51) !important;
+    color: $body-bg !important;
+    width: 100px;
+    text-size-adjust: 100%;
+    font-stretch: 100%;
+    font-size: 12.75px;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 100px !important;
+  }
+  .form {
+    padding-top: 5px;
+  }
+  button:hover {
+    background: rgb(255, 138, 51) !important;
+  }
+  button:focus {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .middle {
+    color: lighten($color: $astro-black-100, $amount: 40%);
+    max-width: none;
+    width: 100%;
+    background: $astro-black-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px !important;
+    .row {
+      width: 100%;
+    }
+  }
+  .bot {
+    color: lighten($color: $astro-black-100, $amount: 40%);
+    height: 80px;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_bot {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    color: lighten($color: $astro-black-100, $amount: 40%);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  span {
+    word-wrap: break-word;
+    color: lighten($color: $astro-black-100, $amount: 60%);
+  }
+  .link {
+    color: lighten($color: $astro-black-100, $amount: 40%) !important;
+    text-decoration: none;
+  }
+  .link:hover {
+    color: $body-bg !important;
+  }
+  .footer_bot {
+    padding-top: 32px;
+    padding-bottom: 100px;
+  }
+  .text {
+    font-size: 15px;
+    line-height: 21.4286px;
+    width: 300px !important;
+    margin-right: 0.5rem !important;
+  }
+  .justify-content-md-center {
+    align-items: center !important;
+  }
+  .iconOsmo {
+    transform: scale(1.2);
+    height: 17px;
+    width: 80px;
+  }
+  .iconOsmo:hover {
+    fill: $body-bg !important;
+  }
+  .tangible {
+    padding-bottom: 10px;
+  }
+  .icon {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+  }
+  .top-mid {
+    max-width: none;
+    width: 100%;
+    background: $astro-black-200 !important;
+  }
+  .facebook {
+    @include icon(-4px, -4px);
+  }
+  .twitter {
+    @include icon(-4px, -53px);
+  }
+  .instagram {
+    @include icon(-4px, -102px);
+  }
+  .pinterest {
+    @include icon(-4px, -200px);
+  }
+  .youtube {
+    @include icon(-4px, -151px);
+  }
+
+  .facebook:hover {
+    @include icon(-53.3px, -4px);
+  }
+  .twitter:hover {
+    @include icon(-53.3px, -53px);
+  }
+  .instagram:hover {
+    @include icon(-53.3px, -102px);
+  }
+  .pinterest:hover {
+    @include icon(-53.3px, -200px);
+  }
+  .youtube:hover {
+    @include icon(-53.3px, -151px);
+  }
+}
+.nav-icon{
+  margin: 0 !important;
+}
+.united{
+  padding: 0 !important;
+}
+.flag{
+  margin: 0;
+  padding: 0 !important;
+}

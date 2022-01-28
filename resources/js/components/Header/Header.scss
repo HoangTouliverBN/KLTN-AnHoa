@@ -1,0 +1,234 @@
+@import '../../../sass/app.scss';
+
+.container-header {
+  background-color: $astro-red-100;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 33%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  .header-desktop {
+    @include media-breakpoint-down(lg) {
+      display: none !important;
+    }
+  }
+  .bg-light {
+    width: 1170px;
+    height: 80px;
+    background-color: $astro-red-100 !important;
+    .navbar-brand {
+      font-family: $font-family-sans-serif;
+      font-weight: $font-weight-bold;
+      color: $white;
+      padding-right: 35px;
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+  }
+  .header-logo {
+    width: 132px;
+    height: 37px;
+    margin-right: 30px;
+    background-image: url('../../assets/img/osmo-logo-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .container-item-action {
+    width: 100%;
+  }
+  .header-item-right {
+    padding-right: 0 !important;
+  }
+
+  .header-mobile {
+    @include media-breakpoint-down(lg) {
+      display: flex !important;
+    }
+    .action-mobile {
+      left: 30px;
+    }
+    .navbar-toggler {
+      border: none;
+      transition: none;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+.offcanvas-start {
+  top: 80px !important;
+  box-shadow: 0 0 16px 0 rgb(0 0 0 / 50%);
+  .container-language-menu {
+    padding: 10px 0;
+  }
+  .divider-mobile {
+    margin-left: 0 !important;
+    margin-right: -15px;
+  }
+  .item-menu {
+    margin-bottom: 15px !important;
+  }
+  .header-divider {
+    height: 1px;
+    background-color: $gray-400;
+    margin-left: 15px;
+  }
+  .container-item-menu-icon {
+    display: flex !important;
+  }
+}
+
+.modal-content {
+  border-radius: 24px !important;
+  padding-bottom: 44px !important;
+  .modal-header {
+    border-bottom: none;
+  }
+  .modal-btn {
+    margin-top: 25px;
+  }
+  .modal-select {
+    border-radius: 12px;
+  }
+}
+
+.popover {
+  position: fixed !important;
+  max-width: none !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 80px !important;
+  transform: none !important;
+  padding: 0 30px !important;
+  .popover-body {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.card {
+  border-radius: 1rem !important;
+  overflow: hidden;
+  margin-bottom: 15px;
+  @include media-breakpoint-down(xxl) {
+    width: 20rem !important;
+  }
+  @include media-breakpoint-down(xl) {
+    width: 17rem !important;
+  }
+  .card-body {
+    padding-top: 50px;
+  }
+  .subImg-popover {
+    width: 200px;
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    @include media-breakpoint-down(xxl) {
+      width: 175px;
+    }
+    @include media-breakpoint-down(xl) {
+      width: 150px;
+    }
+  }
+  .subImg-popover-mobile {
+    top: 1.7rem;
+  }
+}
+
+.dropdown {
+  width: 100%;
+  margin-top: 10px;
+  .dropdown-toggle {
+    width: 100%;
+    height: 42px;
+    padding: 0;
+    display: flex;
+    color: $astro-black-100;
+    border-radius: 12px;
+    &::after {
+      top: 18px;
+      right: 10px;
+      position: absolute;
+    }
+    &:hover {
+      background-color: $white;
+      color: $astro-black-100;
+    }
+  }
+  .dropdown-menu {
+    left: 0 !important;
+    right: 0 !important;
+    max-height: 16rem;
+    overflow: overlay;
+  }
+  .dropdown-item {
+    padding: 0 16px;
+    &:hover,
+    &:focus {
+      background-color: $white;
+      border-radius: 12px;
+    }
+  }
+  .item-select {
+    background-color: $blue-500 !important;
+  }
+}
+h2 {
+  font-family: $font-family-sans-serif !important;
+  font-weight: bold !important;
+}
+
+h5,
+h6 {
+  margin-bottom: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $astro-black-200 !important;
+}
+
+.nav-link {
+  color: $astro-black-200 !important;
+  font-family: $font-family-sans-serif !important;
+}
+
+.item-cursor {
+  cursor: pointer;
+  margin: 6px;
+}
+.header-img {
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid $white;
+}
+
+.btn-outline-secondary:hover {
+  background: transparent !important;
+}
+.dropdown {
+  border: none !important;
+  color: white !important;
+  margin: 0 !important;
+}
+#input-group-dropdown {
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+  .user {
+    margin: 30px !important;
+    color: white !important;
+  }
+}
+#input-group-dropdown:focus {
+  border: none !important;
+  box-shadow: none !important;
+}

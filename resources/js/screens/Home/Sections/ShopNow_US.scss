@@ -1,0 +1,38 @@
+@import '../../../../sass/app.scss';
+.home-shop-now {
+  background-image: url('https://images.playosmo.com/homepage/MW_campaign/hero-dt-bg.png?fit=clip&auto=format&fm=png&dpr=2&ixlib=react-9.3.0&w=1446&h=668');
+  position: absolute;
+  height: 700px;
+  background-size: cover;
+  background-position: 100%;
+  position: static;
+  top: 0;
+  bottom: 0;
+  .background-math {
+    background-image: url('https://images.playosmo.com/homepage/MW_campaign/hero-characters.png?auto=format&amp;fm=png&amp;dpr=2&amp;ixlib=react-9.3.0&amp;w=100%25');
+    position: absolute;
+    height: 700px;
+    background-size: cover;
+    background-position: 100%;
+    position: static;
+    top: 0;
+    bottom: 0;
+  }
+  .math-wizard {
+    width: 90%;
+    position: relative;
+    top: 200px;
+    h1 {
+      color: $white !important;
+      text-shadow: 0 4px 12px rgb(0 0 0 / 30%);
+    }
+    .button {
+      width: 190px;
+      background: #e1e1e1;
+      .text {
+        background: $white;
+        color: #712a6c;
+      }
+    }
+  }
+}

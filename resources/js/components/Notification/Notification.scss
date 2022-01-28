@@ -1,0 +1,26 @@
+.notificaton-container {
+  position: fixed;
+  top: 80px;
+  &.left {
+    left: 0;
+    width: 30%;
+  }
+  &.right {
+    right: 0;
+    width: 30%;
+  }
+  &.top {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+
+  .notificaton-alert {
+    &.left {
+      height: fit-content;
+    }
+    &.right {
+      height: fit-content;
+    }
+  }
+}

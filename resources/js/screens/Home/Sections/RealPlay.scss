@@ -1,0 +1,79 @@
+@import '../../../../sass/app.scss';
+
+.realplay-container {
+  background-color: #ea3729;
+  color: #fff;
+  z-index: 0;
+  padding: 0.015625px 0;
+  position: relative;
+  background-position: 50%;
+  color: #373737;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.55555556;
+  padding-top: 60px;
+  .realplay-img-bottom {
+    background-size: contain;
+    transform: translateY(2px);
+    &::before {
+      content: '';
+      display: block;
+      padding-bottom: 16.04166667%;
+    }
+  }
+  .realplay-img-planet {
+    background-size: auto 112px;
+    z-index: -1;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 25%;
+    width: 55px;
+  }
+  .realplay-img-planet-rings {
+    background-size: auto 114px;
+    z-index: -1;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: 5%;
+    width: 84px;
+  }
+  .realplay-container-detail {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    &::before {
+      content: ' ';
+      display: table;
+    }
+    &::after {
+      clear: both;
+      content: ' ';
+      display: table;
+    }
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 24px;
+    }
+    h1,
+    p {
+      color: $white;
+    }
+  }
+  .section-video-container {
+    padding: 0 !important;
+  }
+}

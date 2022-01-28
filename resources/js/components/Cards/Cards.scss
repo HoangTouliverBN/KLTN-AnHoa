@@ -1,0 +1,65 @@
+@import '../../../sass/app.scss';
+
+.cards {
+  // margin-left: 15px;
+  padding: calc(var(--bs-gutter-x) * 0.5) 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: none;
+  .card-image {
+    position: relative;
+    .wave-image {
+      position: absolute;
+      bottom: 0;
+    }
+    .overview-image {
+      border-radius: 20px;
+      &.without-image {
+        min-height: 300px;
+      }
+      .image {
+        border-radius: 20px;
+        width: 100%;
+      }
+    }
+    .card-content-image {
+      position: absolute;
+      bottom: 0;
+      // color: white;
+      padding-left: 32px;
+      padding-bottom: 18px;
+      &-contentAlign {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .card-name {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 1.27272727;
+      }
+      .card-content {
+        font-size: 18px;
+        margin-top: 12px;
+      }
+    }
+  }
+  .card-body {
+    min-height: 100px;
+    // color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 10px 24px 24px;
+    .card-name {
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 1.27272727;
+    }
+    .card-content {
+      font-size: 18px;
+      margin-top: 12px;
+    }
+  }
+}

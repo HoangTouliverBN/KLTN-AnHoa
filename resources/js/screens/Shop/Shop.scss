@@ -1,0 +1,18 @@
+@import '../../../sass/app.scss';
+.shop-container {
+  max-width: 1170px !important;
+  .shop-container-title {
+    margin-bottom: 64px;
+    padding-top: 80px;
+    h2 {
+      font-size: 54px !important;
+      font-family: Mikado, sans-serif, -apple-system, serif !important;
+      letter-spacing: normal;
+      font-weight: 600 !important;
+      line-height: 1.11764706;
+    }
+    div {
+      font-size: 24px;
+    }
+  }
+}

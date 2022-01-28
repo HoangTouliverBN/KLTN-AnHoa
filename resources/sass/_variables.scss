@@ -1,0 +1,80 @@
+// Body
+$body-bg: #f8fafc;
+
+// Color
+
+$astro-gray-100: #f8f9fa;
+$astro-gray-200: #e1e1e1;
+$astro-gray-300: #dee2e6;
+$astro-gray-400: #ced4da;
+$astro-gray-500: #adb5bd;
+$astro-gray-600: #6c757d;
+$astro-gray-700: #495057;
+$astro-gray-800: #343a40;
+$astro-gray-900: #212529;
+
+$astro-red-100: #ea3729;
+$astro-red-200: #f1564b;
+$astro-red-300: #e21e1e;
+
+$astro-blue-100: #1f5a9b;
+$astro-blue-200: #00adf6;
+$astro-blue-300: #18bbed;
+$astro-blue-400: #6e99aa;
+
+$astro-black-100: #333333;
+$astro-black-200: #373737;
+
+$astro-yellow-100: #ffc933;
+$astro-yellow-200: #fde281;
+$astro-yellow-300: #ffeeb3;
+
+$astro-orange-100: #f77219;
+$astro-orange-200: #ff8a33;
+$astro-orange-300: #ff9a52;
+$astro-orange-400: #fb911d;
+
+$astro-violet: #813480;
+
+$astro-pink: #ea216c;
+
+$astro-green-100: #2ca8a5;
+$astro-green-200: #22b072;
+$astro-green-300: #92c83e;
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root: null !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+
+$line-height-base: 1.5 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 2 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// font-size used a lot of project
+
+$font-default: $font-size-base * 1.15 !default;
+
+// scss-docs-end font-variables
+
+// Typography
+// $font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
