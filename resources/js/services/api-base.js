@@ -6,7 +6,7 @@ import axios from 'axios';
 import cookie from 'react-cookies'
 
 const baseApi = axios.create({
-  baseURL: `${process.env.REACT_APP_API_URL || 'http://localhost:3000/'}`,
+  baseURL: `${process.env.REACT_APP_API_URL || 'http://localhost:8000/'}`,
   withCredentials: false,
   headers: {
     Accept: 'application/json',
