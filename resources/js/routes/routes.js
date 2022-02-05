@@ -11,17 +11,12 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Layout } from '../components';
 
 // Screen
-import { Home, Login, Shop, School, FAQ, Referral } from '../screens';
+import { Home} from '../screens';
 
 const routes = {
   baseRouterPath: '',
   children: [
     { name: 'Home', path: '/', component: Home },
-    { name: 'Shop', path: '/shop', component: Shop },
-    { name: 'Login', path: '/login', component: Login },
-    { name: 'School', path: '/schools', component: School },
-    { name: 'FAQ', path: '/faq', component: FAQ },
-    { name: 'Referral', path: '/referral', component: Referral },
   ],
 };
 
