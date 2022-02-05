@@ -1,1 +1,47 @@
 @import '../../../sass/app.scss';
+
+.container-header {
+  a {
+    text-decoration: none;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  ul li {
+    list-style: none;
+  }
+  .socialIcon {
+    margin: 0px 3px;
+    padding: 0px 3px;
+  }
+  .socialColor {
+    color: #999999;
+  }
+  .socialColor:hover {
+    color: #fe0000;
+    transition: 0.5s;
+  }
+  .iconContact {
+    color: #fe0000;
+  }
+  .loginButton {
+    border: 1px solid #999999;
+    border-radius: 9px;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .linkNav {
+    color: #000000;
+    font-weight: bold;
+  }
+  .linkNav:hover {
+    color: #fe0000;
+    transition: 0.5s;
+  }
+  .contentNav {
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 3px;
+  }
+}
