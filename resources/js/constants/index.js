@@ -1,6 +1,3 @@
-
-
-
 export const constants = {
   MENU: {
     CONTENT: [

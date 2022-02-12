@@ -44,4 +44,13 @@
     padding-left: 40px;
     padding-right: 3px;
   }
+  .header-bottom {
+    box-shadow: #000000;
+  }
+  .background-header-bottom {
+    box-shadow: 0 3px 3px rgb(0 0 0 / 5%);
+    z-index: 99;
+    position: relative;
+    padding-bottom: 5px;
+  }
 }
