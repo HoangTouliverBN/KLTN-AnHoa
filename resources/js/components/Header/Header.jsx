@@ -100,11 +100,7 @@ const Header = () => {
       <img src="	http://www.equipfair.com/images/ets-logo.jpg"></img>
     </div>
   );
-  const headerLeft = (
-    <div className="col-2">
-      {headerLeftTop(social)} {headerLeftBottom}
-    </div>
-  );
+
   const headerRightTop = (items) => (
     <div>
       <ul className="d-flex justify-content-end align-items-center pb-2 mt-2">
@@ -140,18 +136,24 @@ const Header = () => {
       </ul>
     </div>
   );
-  const headerRight = (
-    <div className="col-10">
+  const headerTop = (
+    <div className="container d-flex justify-content-between align-items-center">
+      {headerLeftTop(social)}
       {headerRightTop(contact)}
+    </div>
+  );
+  const headerBottom = (
+    <div className="container header-bottom d-flex justify-content-between align-items-center">
+      {headerLeftBottom}
       {headerRightBottom(navBar)}
     </div>
   );
 
   return (
-    <div className="container container-header">
-      <div className=" d-flex align-items-center justify-content-between">
-        {headerLeft}
-        {headerRight}
+    <div className="container-header">
+      <div className="">
+        <div >{headerTop}</div>
+        <div className='background-header-bottom'>{headerBottom}</div>
       </div>
     </div>
   );
