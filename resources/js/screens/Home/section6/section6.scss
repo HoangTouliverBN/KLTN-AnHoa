@@ -1,0 +1,27 @@
+@import '../../../../sass/app.scss';
+
+.SlideShow6 {
+  padding: 70px 0px 50px;
+  background-color: rgba(0, 0, 0, 0.05);
+  .section6-2 {
+    width: 80%;
+    .title {
+      background-color: #ffffff;
+      padding: 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .content {
+      background-color: #ffffff;
+      padding: 15px;
+    }
+  }
+
+  .linkNav {
+    color: #fe0000;
+    font-weight: bold;
+  }
+  .linkNav:hover {
+    color: #cb0000;
+    transition: 0.3s;
+  }
+}

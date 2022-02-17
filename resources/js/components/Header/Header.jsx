@@ -152,8 +152,8 @@ const Header = () => {
   return (
     <div className="container-header">
       <div className="">
-        <div >{headerTop}</div>
-        <div className='background-header-bottom'>{headerBottom}</div>
+        <div>{headerTop}</div>
+        <div className="background-header-bottom">{headerBottom}</div>
       </div>
     </div>
   );
