@@ -7,6 +7,7 @@ import Section5 from './section5/section5';
 import Section6 from './section6/section6';
 import Section7 from './section7/section7';
 import Section8 from './section8/section8';
+import Section9 from './section9/section9';
 
 const Home = () => {
   // Section2
@@ -21,6 +22,7 @@ const Home = () => {
       <div className="SlideShow6">{Section6()}</div>
       <div className="SlideShow7">{Section7()}</div>
       <div className="SlideShow8">{Section8()}</div>
+      <div className="SlideShow9">{Section9()}</div>
     </div>
   );
 };

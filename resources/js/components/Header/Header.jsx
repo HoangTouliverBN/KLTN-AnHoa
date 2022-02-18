@@ -115,7 +115,7 @@ const Header = () => {
 
         <li className="socialIcon socialColor loginButton">
           <i className="fas fa-user"></i>{' '}
-          <a className="iconContact" href="mailto:sales.khomay@gmail.com">
+          <a className="iconContact" href="/login">
             Đăng nhập
           </a>
         </li>
