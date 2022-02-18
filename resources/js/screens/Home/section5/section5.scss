@@ -1,0 +1,41 @@
+@import '../../../../sass/app.scss';
+
+.SlideShow5 {
+  background-image: url(http://www.equipfair.com/images/hoi-hang.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  .overley {
+    padding-top: 70px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-color: rgba(249, 246, 246, 0.75);
+    .font-size-icon {
+      font-size: 20px;
+    }
+    .section5-2 {
+      width: 30%;
+      border-color: rgba(255, 43, 2, 0.2);
+      background-color: #fff;
+      border: 1px solid transparent;
+      .title {
+        padding: 10px;
+        cursor: pointer;
+        color: #ff2b02;
+        background: rgba(255, 43, 2, 0.1);
+      }
+      .content {
+        padding: 10px;
+        font-size: 16px;
+        transition: 1s;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

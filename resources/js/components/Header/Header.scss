@@ -24,6 +24,8 @@
   }
   .iconContact {
     color: #fe0000;
+    border: none;
+    background-color: #ffffff;
   }
   .loginButton {
     border: 1px solid #999999;
@@ -48,7 +50,7 @@
     box-shadow: #000000;
   }
   .background-header-bottom {
-    box-shadow: 0 3px 3px rgb(0 0 0 / 5%);
+    box-shadow: 0 3px 3px rgb(0 0 0 / 10%);
     z-index: 99;
     position: relative;
     padding-bottom: 5px;
