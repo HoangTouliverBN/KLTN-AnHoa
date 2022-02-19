@@ -52,7 +52,7 @@ const Header = () => {
     },
     {
       key: 'introduction',
-      link: '#',
+      link: '/introduce',
       content: 'GIỚI THIỆU',
     },
     {

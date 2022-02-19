@@ -1,7 +1,21 @@
 @import '../../../sass/app.scss';
 
-.footer {
-  background-color: #fe0000;
-  padding: 20px 0px;
-  color: #ffffff;
+.footer-layout {
+  .SlideShow9 {
+    background-color: rgba(0, 0, 0, 0.05);
+    .link {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      &:hover {
+        transition: 0.3s;
+        color: #fe0000;
+      }
+    }
+  }
+  .footer {
+    background-color: #fe0000;
+    padding: 20px 0px;
+    color: #ffffff;
+  }
 }
