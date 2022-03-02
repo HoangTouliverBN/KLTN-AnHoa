@@ -17,6 +17,7 @@
   }
   .custome-table {
     border: 1px solid;
+    border-bottom: none;
     .custome-tr {
       margin: 0px;
       border-bottom: 1px solid;
@@ -24,5 +25,32 @@
     .custome-td {
       border-right: 1px solid;
     }
+  }
+  .iconContact {
+    color: #fe0000;
+    border: none;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+  .socialIcon {
+    margin: 0px 3px;
+    list-style: none;
+    padding: 18px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    &:hover {
+      background-color: #fe0000;
+      .socialColor {
+        color: #ffffff;
+        transition: 0.3s;
+      }
+    }
+  }
+  .socialColor {
+    color: #fe0000;
+    font-size: 18px;
+    position: absolute;
+    transform: translate(-50%, -50%);
   }
 }

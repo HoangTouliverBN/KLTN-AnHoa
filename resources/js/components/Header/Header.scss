@@ -39,7 +39,7 @@
   }
   .linkNav:hover {
     color: #fe0000;
-    transition: 0.5s;
+    transition: 0.3s;
   }
   .contentNav {
     font-size: 15px;
@@ -54,5 +54,62 @@
     z-index: 99;
     position: relative;
     padding-bottom: 5px;
+  }
+
+  .product {
+    .linkNav {
+      color: #000000;
+      font-weight: bold;
+    }
+    .category {
+      position: absolute;
+      background: #ffffff;
+      padding: 15px;
+      width: 18%;
+      visibility: hidden;
+      transition: all 500ms ease;
+      opacity: 0;
+      box-sizing: border-box;
+      box-shadow: 1px 4px 7px 6px rgb(0 0 0 / 10%);
+      cursor: pointer;
+      .item-category {
+        padding: 10px 5px;
+      }
+    }
+    .productDiv {
+      position: absolute;
+      background: #ffffff;
+      color: black;
+      padding: 15px;
+      width: 80%;
+      visibility: hidden;
+      transition: all 500ms ease;
+      opacity: 0;
+      box-sizing: border-box;
+      box-shadow: 1px 4px 7px 6px rgb(0 0 0 / 10%);
+      cursor: pointer;
+      transform: translate(calc(100% + 32px), calc(50% - 23px));
+    }
+    &:hover {
+      .category {
+        opacity: 1;
+        visibility: visible;
+        .item-category {
+          transition: 0.3s;
+          &:hover {
+            background-color: #fe0000;
+            color: #ffffff;
+            .productDiv {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+      .linkNav {
+        color: #fe0000;
+        transition: 0.3s;
+      }
+    }
   }
 }

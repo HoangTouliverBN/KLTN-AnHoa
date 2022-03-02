@@ -3,6 +3,24 @@ import { React } from 'react';
 import './introduce.scss';
 
 const Introduce = () => {
+  const social = [
+    {
+      link: 'https://www.facebook.com/quy.nguyentinh',
+      icons: <i className="fab fa-facebook-f"></i>,
+    },
+    {
+      link: 'https://twitter.com/NguyenQuyTinh1',
+      icons: <i className="fab fa-twitter"></i>,
+    },
+    {
+      link: '#',
+      icons: <i className="fab fa-youtube"></i>,
+    },
+    {
+      link: 'http://www.equipfair.com/skype:#?chat',
+      icons: <i className="fab fa-skype"></i>,
+    },
+  ];
   const tableData = [
     {
       number: 1,
@@ -61,6 +79,19 @@ const Introduce = () => {
       title: 'Các thiết bị công nghiệp khác',
     },
   ];
+  const headerLeftTop = (items) => (
+    <div>
+      <ul className="d-flex justify-content-end pb-2 mt-2">
+        {items.map((item, key) => (
+          <li key={key} className="socialIcon">
+            <a href={item.link} className="socialColor">
+              {item.icons}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
   return (
     <div className="introduce">
       <div className="header">
@@ -106,8 +137,23 @@ const Introduce = () => {
               </tr>
             ))}
           </div>
+          <div className="pt-5 pb-5">
+            <span className="fw-bold">Dịch vụ Tư Vấn:</span> <br /> <br /> Trọng tâm của nghiên cứu
+            và chuyển giao của chúng tôi là các lĩnh vực hàn cắt kim loại, sấy điện, hút <br /> và
+            xử lý khói hàn, điều khiển và tự động hóa, thiết bị dạy nghề kỹ thuật,… <br /> <br />{' '}
+            Hãy liên hệ với chúng tôi theo email:{' '}
+            <a href="mailto:sales.khomay@gmail.com" className="iconContact">
+              sales.khomay@gmail.com
+            </a>{' '}
+            để có thêm thông tin chi tiết. <br /> <br />
+            Mong được công tác với Quý Khách Hàng trong thời gian sớm! <br /> <br /> Trân trọng,
+            <br />
+            <br />
+            Tổng Giám đốc <br />
+            <span className="fw-bold">Nguyễn Quý Tính</span>
+          </div>
           <div>
-            
+            <div>{headerLeftTop(social)}</div>
           </div>
         </div>
       </div>
