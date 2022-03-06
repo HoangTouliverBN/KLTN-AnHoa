@@ -11,14 +11,15 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Layout } from '../components';
 
 // Screen
-import { Home, Login, Introduce } from '../screens';
+import { Home, Login, Introduce, Project } from '../screens';
 
 const routes = {
   baseRouterPath: '',
   children: [
-    { name: 'Home', path: '/', component: Home },
-    { name: 'Login', path: '/login', component: Login },
-    { name: 'Introduce', path: '/introduce', component: Introduce },
+    { name: 'Home', path: '/ets/', component: Home },
+    { name: 'Login', path: '/ets/login', component: Login },
+    { name: 'Introduce', path: '/ets/introduce', component: Introduce },
+    { name: 'Project', path: '/ets/project', component: Project },
   ],
 };
 

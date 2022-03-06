@@ -1,0 +1,59 @@
+@import '../../../sass/app.scss';
+
+.project {
+  padding-bottom: 30px;
+  .header {
+    padding: 30px 0px;
+    background-color: #fe0000;
+    color: white;
+    margin-bottom: 100px;
+  }
+  .page-header {
+    margin: 40px 0 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .active {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .title {
+    color: #fe0000;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+  .item-odd {
+    background-color: #f9f9f9;
+  }
+  .item {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    .child {
+      padding: 8px 15px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+    }
+    &:hover {
+      background-color: #f5f5f5;
+    }
+    .child-title {
+      color: #fe0000;
+    }
+    .child-views {
+      display: inline-block;
+      min-width: 10px;
+      padding: 3px 7px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      background-color: #777;
+      border-radius: 10px;
+    }
+  }
+}
