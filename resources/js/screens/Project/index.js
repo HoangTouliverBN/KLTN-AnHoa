@@ -1,2 +1,2 @@
-import Introduce from './Project';
-export default Introduce;
+import Project from './Project';
+export default Project;

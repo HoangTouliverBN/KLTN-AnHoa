@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Layout } from '../components';
 
 // Screen
-import { Home, Login, Introduce, Project } from '../screens';
+import { Home, Login, Introduce, Project, Product, DetailProduct } from '../screens';
 
 const routes = {
   baseRouterPath: '',
@@ -20,6 +20,8 @@ const routes = {
     { name: 'Login', path: '/ets/login', component: Login },
     { name: 'Introduce', path: '/ets/introduce', component: Introduce },
     { name: 'Project', path: '/ets/project', component: Project },
+    { name: 'Product', path: '/ets/product', component: Product },
+    { name: 'DetailProduct', path: '/ets/product/detail', component: DetailProduct },
   ],
 };
 

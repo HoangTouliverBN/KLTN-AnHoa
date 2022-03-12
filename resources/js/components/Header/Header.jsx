@@ -47,23 +47,23 @@ const Header = () => {
   const navBar = [
     {
       key: 'home',
-      link: '/',
+      link: '/ets/',
       content: 'TRANG CHỦ',
     },
     {
       key: 'introduction',
-      link: '/introduce',
+      link: '/ets/introduce',
       content: 'GIỚI THIỆU',
     },
     {
       key: 'product',
-      link: '',
+      link: '/ets/product',
       content: 'SẢN PHẨM ',
       icon: <i className="fas fa-chevron-down"></i>,
     },
     {
       key: 'project',
-      link: '#',
+      link: '/ets/project',
       content: 'DỰ ÁN',
     },
     {
@@ -176,7 +176,7 @@ const Header = () => {
 
         <li className="socialIcon socialColor loginButton">
           <i className="fas fa-user"></i>{' '}
-          <a className="iconContact" href="/login">
+          <a className="iconContact" href="/ets/login">
             Đăng nhập
           </a>
         </li>
