@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Layout } from '../components';
 
 // Screen
-import { Home, Login, Introduce, Project, Product, DetailProduct } from '../screens';
+import { Home, Login, Introduce, Project, Product, DetailProduct, ShoppingCart } from '../screens';
 
 const routes = {
   baseRouterPath: '',
@@ -22,6 +22,7 @@ const routes = {
     { name: 'Project', path: '/ets/project', component: Project },
     { name: 'Product', path: '/ets/product', component: Product },
     { name: 'DetailProduct', path: '/ets/product/detail', component: DetailProduct },
+    { name: 'ShoppingCart', path: '/ets/shopping-cart', component: ShoppingCart },
   ],
 };
 
