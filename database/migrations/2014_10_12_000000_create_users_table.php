@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->text('setting')->nullable();
             $table->integer('active')->default(1);
             $table->string("access_roles")->nullable();
+            $table->string("deleted_at")->nullable();
             //information
             $table->integer('phone')->nullable();
             $table->string('address')->nullable();

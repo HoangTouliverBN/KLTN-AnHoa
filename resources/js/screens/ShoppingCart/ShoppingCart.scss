@@ -1,5 +1,21 @@
 @import '../../../sass/app.scss';
 
 .shopping-cart {
-
+  .header {
+    padding: 30px 0px;
+    background-color: #fe0000;
+    color: white;
+    margin-bottom: 100px;
+  }
+  .page-header {
+    margin: 40px 0 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .active {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .image-cart {
+    width: 30%;
+  }
 }

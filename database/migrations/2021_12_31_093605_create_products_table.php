@@ -17,6 +17,8 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('name');
             $table->bigInteger('category_id')->unsigned();
+            $table->string('devices_id')->nullable();
+            $table->string('skills_id')->nullable();
             $table->integer('age');
             $table->text('description')->nullable();
             $table->integer('price');
@@ -24,8 +26,6 @@ class CreateProductsTable extends Migration
             $table->integer('active')->default(0);
             $table->bigInteger('discount_id')->unsigned()->nullable();
             $table->string('slug');
-            $table->string('image')->nullable();
-            $table->string('gallery')->nullable();
             $table->timestamps();
             $table->bigInteger('version')->default(1);
             $table->bigInteger('parent')->nullable();
